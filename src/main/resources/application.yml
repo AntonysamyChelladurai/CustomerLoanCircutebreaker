@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: Customer_loan
+  jpa.hibernate.ddl-auto: update
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/learn?allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: 12345678
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa.show-sql: true
+
+server:
+  port: 8100
